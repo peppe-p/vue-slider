@@ -43,6 +43,10 @@ var app = new Vue(
                     return this.prev()
                 }
             });
+
+            setInterval(() => {
+                return this.next()
+            }, 3000);
         }
     }
 );
