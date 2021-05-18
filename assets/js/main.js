@@ -24,7 +24,16 @@ var app = new Vue(
                     return this.i = 0
                 }
                 return this.i += 1
-            }
+            },
+            n1() {
+                return this.i = 0
+            },
+            n2() {
+                return this.i = 1
+            },
+            n3() {
+                return this.i = 2
+            },
         },
         mounted() {
             window.addEventListener("keydown", (element) => {
@@ -34,6 +43,10 @@ var app = new Vue(
                     return this.prev()
                 }
             });
+
+            setInterval(() => {
+                return this.next()
+            }, 3000);
         }
     }
 );

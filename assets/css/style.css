@@ -10,6 +10,13 @@
     align-items: center;
 }
 
+.slidershow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
 img {
     height: 300px;
     width: 500px;
@@ -18,4 +25,26 @@ img {
 .icons {
     font-size: 50px;
     margin: 10px;
+}
+
+.pointed_menu {
+    width: 120px;
+    height: 20px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.432);
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.sphere {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+}
+.sphere:hover {
+    border: 2px solid black;
 }

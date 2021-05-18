@@ -14,14 +14,21 @@
 
     <main id="root">
         <!-- freccia -->
-        <div @click="prev">
-            <i class="icons fas fa-angle-left"></i>
+        <div class="slidershow">
+            <div @click="prev">
+                <i class="icons fas fa-angle-left"></i>
+            </div>
+            <div class="pointed_menu">
+                <div class="sphere" @click="n1"></div>
+                <div class="sphere" @click="n2"></div>
+                <div class="sphere" @click="n3"></div>
+            </div>
+            <img :src="imageList[i]" alt="">
+            <div @click="next">
+                <i class="icons fas fa-angle-right"></i>
+            </div>
+            <!-- freccia -->
         </div>
-        <img :src="imageList[i]" alt="">
-        <div @click="next">
-            <i class="icons fas fa-angle-right"></i>
-        </div>
-        <!-- freccia -->
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
