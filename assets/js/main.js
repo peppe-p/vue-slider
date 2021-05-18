@@ -25,6 +25,15 @@ var app = new Vue(
                 }
                 return this.i += 1
             }
+        },
+        mounted() {
+            window.addEventListener("keydown", (element) => {
+                if (element.key == "ArrowRight") {
+                    return this.next()
+                } else if (element.key == "ArrowLeft") {
+                    return this.prev()
+                }
+            });
         }
     }
 );
